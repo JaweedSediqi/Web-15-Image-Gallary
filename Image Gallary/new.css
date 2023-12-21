@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: #191919;
+}
+.img{
+    width: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+span img{
+    width: 100%;
+    filter: grayscale(100);
+}
+.containner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.hero{
+    width: 900px;
+    background: transparent;
+    display: flex;
+    overflow-x: scroll;
+
+}
+.hero div{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+    flex: none;
+    padding: 10px;
+}
+span img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    filter: grayscale(0);
+}
+.hero::-webkit-scrollbar{
+    display: none;
+}
